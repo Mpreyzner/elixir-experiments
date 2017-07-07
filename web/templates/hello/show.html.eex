@@ -1,3 +1,4 @@
 <dir class="jumbrotron">
+<a href="<%= page_path(@conn, :index) %>">Main page</a>
 	<h2>Hello world, from <%= @messenger %>!</h2>
 </dir>

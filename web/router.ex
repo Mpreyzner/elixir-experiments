@@ -20,6 +20,7 @@ defmodule HelloPhoenix.Router do
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
     resources "/user", UserController, except: [:delete]
+    resources "/posts", PostController, only: [:index, :show]
   end
 
   # Other scopes may use custom stacks.
